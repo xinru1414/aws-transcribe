@@ -9,6 +9,7 @@
 
 * git clone the package
 * set up the client config properties in `src/examples/stream-from-microphone.ts`
+* change wav data path in `src/examples/stream-from-microphone.ts`
 * in `aws-transcribe` dir, run `ts-node src/examples/stream-from-file.ts`
 
 
