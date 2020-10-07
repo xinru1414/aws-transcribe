@@ -1,5 +1,6 @@
 import * as fs from 'fs'
-import * as Throttle from 'throttle'
+import Throttle = require("throttle");
+
 import { AwsTranscribe, StreamingClient, TranscriptEvent } from "../index"
 
 const sampleRate = 16000
