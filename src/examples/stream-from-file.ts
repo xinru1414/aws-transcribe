@@ -48,12 +48,15 @@ const transcribeStream = client
         if (!results || results.length === 0) {
             return
         }
-
+        // to get more detailed data such as word_content, start_time, end_time, see
+        // https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_Result.html &
+        // https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_Item.html
         const result = results[0]
         const final = !result.IsPartial
         const prefix = final ? "recognized" : "recognizing"
         const text = result.Alternatives[0].Transcript
         console.log(`${prefix} text: ${text}`)
+
     })
 
 /******************************************************************************
