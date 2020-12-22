@@ -8,8 +8,8 @@
 ## How to use it
 
 * git clone the package
-* set up the client config properties in `src/examples/stream-from-microphone.ts`
-* change wav data path in `src/examples/stream-from-microphone.ts`
+* set up the client config properties in `src/examples/stream-from-file.ts`
+* assume you have a test wav file, change wav data path in `src/examples/stream-from-file.ts` to point to the test wav file
 * in `aws-transcribe` dir, run `ts-node src/examples/stream-from-file.ts`
 
 
